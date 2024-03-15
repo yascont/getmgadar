@@ -1,13 +1,15 @@
 <header>
     <img src="/assets/logo.svg">
     <nav>
-        <a (click)="onChange('home')" [class.active]="currentPage === 'home'" class="active" routerLink="/home">Home</a>
-        <a (click)="onChange('pricing')" [class.active]="currentPage === 'pricing'" class="active" routerLink="/pricing">Pricing</a>
-        <a (click)="onChange('pages')" [class.active]="currentPage === 'pages'" class="active" routerLink="/pages">Pages</a>
-        <a (click)="onChange('class')" [class.active]="currentPage === 'class'" class="active" routerLink="/class">Class</a>
-        <a (click)="onChange('schedule')" [class.active]="currentPage === 'schedule'" class="active" routerLink="/schedule">Schedule</a>
-        <a (click)="onChange('blog')" [class.active]="currentPage === 'blog'" class="active" routerLink="/blog">Blog</a>
-        <a (click)="onChange('shop')" [class.active]="currentPage === 'shop'" class="active" routerLink="/shop">Shop</a>
-        <a (click)="onChange('contact')" [class.active]="currentPage === 'contact'" class="active" routerLink="/contact">Contact</a>
+        <!-- TODO: FIX ngFor -->
+        <!-- <a *ngFor="let route of routes" [class.active]='currentPage === "{{route}}"' class="active" routerLink='/{{route}}'>{{route[0].toUpperCase() + route.split('').slice(1).join('')}}</a> -->
+        <a [class.active]="currentPage === 'home'" class="active" routerLink="/home">Home</a>
+        <a [class.active]="currentPage === 'pricing'" class="active" routerLink="/pricing">Pricing</a>
+        <a [class.active]="currentPage === 'pages'" class="active" routerLink="/pages">Pages</a>
+        <a [class.active]="currentPage === 'class'" class="active" routerLink="/class">Class</a>
+        <a [class.active]="currentPage === 'schedule'" class="active" routerLink="/schedule">Schedule</a>
+        <a [class.active]="currentPage === 'blog'" class="active" routerLink="/blog">Blog</a>
+        <a [class.active]="currentPage === 'shop'" class="active" routerLink="/shop">Shop</a>
+        <a [class.active]="currentPage === 'contact'" class="active" routerLink="/contact">Contact</a>
     </nav>
 </header>
