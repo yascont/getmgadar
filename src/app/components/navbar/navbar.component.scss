@@ -60,6 +60,10 @@ img {
 
 }
 
+@media (max-width: 1320px) {
+    img { left: 80px; }
+}
+
 @media (max-width: 1160px) {
     img { display: none; }
 }
