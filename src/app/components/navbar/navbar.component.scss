@@ -5,6 +5,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+    overflow: hidden;
 }
 
 nav {
@@ -48,7 +49,7 @@ a:hover:after, .active::after {
 
 img {
     position: absolute;
-    left: 50px;
+    left: 180px;
     width: 190px;
     top: 50%;
     transform: translate(0, -50%);

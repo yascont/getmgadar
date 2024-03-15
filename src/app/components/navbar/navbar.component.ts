@@ -8,7 +8,7 @@ import { NavigationEnd } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  routes = ['home', 'pricing', 'pages', 'class', 'schedule', 'blog', 'shop', 'contact']
+  routes = ['home', 'pricing', 'bmic', 'class', 'schedule', 'blog', 'shop', 'contact']
   constructor(private router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
