@@ -16,14 +16,14 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, AboutComponent, PricingTableComponent, PricingComponent],
+  declarations: [AppComponent, HomePageComponent, AboutComponent, HeaderComponent, PricingTableComponent, PricingComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

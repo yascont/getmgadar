@@ -13,7 +13,7 @@ import { NgIf } from '@angular/common';
 @Component({
   selector: 'mg-login',
   standalone: true,
-  imports: [MatFormFieldModule, MatInputModule, ReactiveFormsModule, MatCardModule, MatButtonModule, HeaderComponent, NgIf],
+  imports: [MatFormFieldModule, MatInputModule, ReactiveFormsModule, MatCardModule, MatButtonModule, NgIf],
   template: `
   <div class="flex justify-center items-center bg-cover bg-center bg-no-repeat h-screen" style="background-image: url('assets/images/fit.jpg')">
     <form [formGroup]="loginForm" class="w-full max-w-xs">

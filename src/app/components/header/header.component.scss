@@ -1,0 +1,121 @@
+@keyframes move {
+    0% {
+      margin-top: 300px;
+    }
+    100% {
+       margin-top: 0;    }
+  }
+
+  @keyframes zoom-in-out {
+    0% {
+      background-size: 180%;
+    }
+    50% {
+       background-size:240%;
+    }
+    100% {
+       background-size: 180%;    }
+  }
+*{
+    font-family: "Montsrrat", sans-serif;
+}
+
+header{
+    height : 800px;
+    max-width: 100%;
+    background-image: url('https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/03/banner-9-1.jpg');
+    background-size : cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    animation: zoom-in-out 60s linear infinite alternate;
+}
+
+._image{
+    height: 100%;
+    width: 100%;
+    background-image: url('https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/element/home4-shape3.svg');
+    background-size: cover;
+    padding-top: 17%;
+}
+
+._image .container{
+    width: 95%;
+    margin-left: auto;
+    color: #ffff;
+    text-align: left;
+
+}
+
+._image .container .first{
+    font-weight:700;
+    font-size: 17px;
+    height: 30px;
+    padding-left: 3%;
+    padding-top: 5px;
+    
+    // width: 550px;
+    background-image: url("https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/img/section-title.svg");
+    background-repeat: no-repeat;
+    
+    animation: move 1s ease forwards;
+}
+
+._image .container h2{
+    font-size: 40px;
+    font-weight: 600;
+    width: 550px;
+    line-height: 52px;
+    animation: move 1.2s ease forwards;
+}
+
+._image .container .second{
+    color : #cbcbcb;
+    width: 650px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    animation: move 1.5s ease forwards;
+}
+
+.classes_hover{
+    width: 170px;
+    height: 50px;
+    border: solid 1px #ff0336;
+    display: inline-block;
+    margin-top : 5px;
+}
+.last{
+    position: relative;
+    background-color: #ff0336;
+    height: 50px;
+    width : 170px;
+    text-align: center;
+    padding-top: 15px;
+    border: 1px solid white;
+    z-index: 2;
+    transition: all 0.5s ease;
+    animation: move 2s ease forwards;
+}
+
+// .last::after{
+//     content: '';
+//     height: 50px;
+//     width : 170px;
+//     position: relative;
+//     //   top: 548px;
+//     // left: 204px;
+//       border: 1px solid white;
+//       z-index: 0; 
+// }
+
+.last:hover{
+    border-color: #ff0336;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 1150px) {
+    header{
+        animation: none;
+    }
+  }

@@ -16,20 +16,20 @@ const routes: Routes = [
   {
     path: 'home',
     pathMatch: 'full',
-    // canActivate: [AuthGuard],
-    component: PricingComponent,
+    canActivate: [AuthGuard],
+    component: HomePageComponent,
   },
-  // {
-  //   path: 'home',
-  //   pathMatch: 'full',
-  //   canActivate: [AuthGuard],
-  //   component: HomePageComponent,
-  // },
   {
     path: 'about',
     pathMatch: 'full',
     canActivate: [AuthGuard],
     component: AboutComponent,
+  },
+  {
+    path: 'pricing',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: PricingComponent,
   },
   {
     path: 'auth',
