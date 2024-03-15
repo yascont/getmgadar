@@ -21,8 +21,7 @@
 }
 
 header{
-    height : 800px;
-    max-width: 100%;
+    height : 100vh;
     background-image: url('https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/03/banner-9-1.jpg');
     background-size : cover;
     background-repeat: no-repeat;
@@ -39,11 +38,17 @@ header{
 }
 
 ._image .container{
-    width: 95%;
     margin-left: auto;
     color: #ffff;
     text-align: left;
 
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 100px;
+    transform: translate(0, -50%);
 }
 
 ._image .container .first{
