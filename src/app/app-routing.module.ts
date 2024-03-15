@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PricingComponent } from './components/pricing/pricing.component';
+import { BMICComponent } from './components/bmic/bmic.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,12 @@ const routes: Routes = [
     pathMatch: 'full',
     canActivate: [AuthGuard],
     component: AppComponent,
+  },
+  {
+    path: 'bmic',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: BMICComponent,
   },
   {
     path: 'home',

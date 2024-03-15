@@ -1,0 +1,118 @@
+section {
+    background-image: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/04/shape-94.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 90px);
+    min-height: 750px;
+}
+
+main {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    flex: 1;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    font-family: Montserrat;
+}
+
+header p {
+    color: #A1A1A1;
+}
+
+.calculator {
+    flex: 1;
+}
+
+input {
+    height: 50px;
+    width: 30%;
+    border: 1px solid #6a6a6a;
+    background-color: initial;
+    border-radius: 0;
+    color: #b4adad;
+    color: #666;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+button {
+    background-color: #323232;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 30px;
+    transition: all .4s ease;
+    height: 54px;
+    display: block;
+    border: 1px solid transparent;
+}
+
+
+button:hover {
+    display: block;
+    background-color: #ff0336;
+    border: 1px solid #ff0336;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.calculator p {
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media (max-width: 670px) {
+    main {
+        flex-direction: column;
+        gap: 25px;
+    }
+    header {
+        height: 100px;
+        flex: .2;
+    }
+    .calculator {
+        flex: .2;
+    }
+}

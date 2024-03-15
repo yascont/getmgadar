@@ -1,0 +1,15 @@
+<section>
+    <main>
+        <header>
+            <h1>Calculate your BMI</h1>
+            <p>Calculate your BMI to check whether you are skinny or dying of diabetes</p>
+        </header>
+        <div class="calculator">
+            <input type="number" placeholder="Weight / kg" [(ngModel)]="weight">
+            <input type="number" placeholder="Height / cm" [(ngModel)]="height">
+            <button (click)="calculate()">CALCULATE</button>
+            <p [class.hidden]='bmi === -1'>Your BMI: {{bmi.toFixed(2)}}</p>
+            <p [class.hidden]='bmi === -1'>Your status: {{status}}</p>
+        </div>
+    </main>
+</section>

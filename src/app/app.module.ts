@@ -14,10 +14,11 @@ import { AboutComponent } from './pages/about/about.component';
 import { PricingTableComponent } from './components/pricing/pricing-table/pricing-table.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { FormsModule } from '@angular/forms';
-import { NavbarComponent } from './components/navbar/navbar.component'; // <-- NgModel lives here
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { BMICComponent } from './components/bmic/bmic.component'; // <-- NgModel lives here
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, AboutComponent, HeaderComponent, PricingTableComponent, PricingComponent, NavbarComponent],
+  declarations: [AppComponent, HomePageComponent, AboutComponent, HeaderComponent, PricingTableComponent, PricingComponent, NavbarComponent, BMICComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
