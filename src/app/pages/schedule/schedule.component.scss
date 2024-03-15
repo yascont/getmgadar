@@ -1,0 +1,116 @@
+*{
+    font-family: "Montsrrat", sans-serif;
+}
+
+
+.schedule-head{
+    padding-top: 10%;
+    text-align: left;
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/images/man.jpg");
+    color: white;
+}
+
+.bg-gris{
+    color: #b51131;
+    margin-left: 0px;
+    padding-left: 45px;
+    padding-top: 4px;
+    width: 252px;
+    height: 28px;
+    background-image: url("https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/img/breadcumb-shape.svg");
+}
+
+.gr{
+    color: #4b4b4b;
+}
+
+.white{
+    color:white;
+    transition: all 0.5s ease;
+}
+
+.white:hover{
+    color : #b51131;
+    cursor: pointer;
+}
+
+.schedule-head .head{
+    margin-left: 5px;
+    line-height: 52px;
+    margin-bottom: 10px;
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+.list{
+    margin-top: 60px;
+    margin-left: 40px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li{
+    font-weight: 550;
+    padding-top: 15px;
+    text-align: center;
+    height: 50px;
+    width: 140px;
+    border: 1px solid #c2b7b9;
+    border-radius: 50px;
+    transition: all 0.6s ease;
+    margin-bottom: 30px;
+}
+
+.list li:hover{
+    background-color: #ff0336;
+    color: white;
+}
+
+.conta{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin-left: 20px;
+    height: 80px;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.conta span{
+    margin-bottom: 10px;
+    color : #c1c3ca;
+}
+
+.conta p{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.main{
+    padding-bottom: 80px;
+}
+
+.join{
+    margin-top: 5px;
+    background-color: #555555;
+    width: 130px;
+    height: 40px;
+    border-radius: 40px;
+    padding-top: 10px;
+    color: white;
+    transition: all 0.6s ease;
+}
+
+.join:hover{
+    cursor: pointer;
+    background-color: #ff0336;
+}

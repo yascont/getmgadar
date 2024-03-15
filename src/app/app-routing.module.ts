@@ -6,6 +6,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { BMICComponent } from './components/bmic/bmic.component';
+import { ScheduleComponent } from './pages/schedule/schedule.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,12 @@ const routes: Routes = [
     pathMatch: 'full',
     canActivate: [AuthGuard],
     component: PricingComponent,
+  },
+  {
+    path: 'schedule',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: ScheduleComponent,
   },
   {
     path: 'auth',
