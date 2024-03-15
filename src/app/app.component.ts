@@ -11,6 +11,8 @@ import { filter } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
+
   private readonly router: Router = inject(Router);
   ngOnInit() {
     this.router.events
@@ -23,4 +25,5 @@ export class AppComponent implements OnInit {
         }
       });
   }
+  
 }

@@ -3,8 +3,7 @@ section {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 90px);
-    min-height: 750px;
+    height: 100vh;
 }
 
 .prices-container {
@@ -30,7 +29,7 @@ h1 {
 }
 
 $color1: #f4f4f4;
-$color2: #FF0336;
+$color2: #3197EE;
 
 .radio {
     margin: 0.5rem;
