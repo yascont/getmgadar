@@ -63,7 +63,7 @@ export class LoginComponent {
       this.authService.login(email, password)
       .then((userCredential) => {
         console.log(userCredential)
-        this.router.navigate(['']);
+        this.router.navigate(['/home']);
       })
       .catch((error) => {
         this.errorMessage = error.message;

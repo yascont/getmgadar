@@ -2,13 +2,27 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from 'src/auth/auth.guard';
 import { AppComponent } from './app.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: AppComponent,
     canActivate: [AuthGuard],
+    component: AppComponent,
+  },
+  {
+    path: 'home',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: HomePageComponent,
+  },
+  {
+    path: 'about',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: AboutComponent,
   },
   {
     path: 'auth',
@@ -20,4 +34,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+  
+}

@@ -9,9 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthService } from 'src/auth/auth.service';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomePageComponent, AboutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
