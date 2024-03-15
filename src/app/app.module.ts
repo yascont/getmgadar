@@ -16,9 +16,12 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BMICComponent } from './components/bmic/bmic.component'; // <-- NgModel lives here
+import { CommonModule } from '@angular/common';
+import { ScheduleComponent } from './pages/schedule/schedule.component';
+
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, AboutComponent, HeaderComponent, PricingTableComponent, PricingComponent, NavbarComponent, BMICComponent],
+  declarations: [AppComponent, HomePageComponent, AboutComponent, HeaderComponent, PricingTableComponent, PricingComponent, NavbarComponent, BMICComponent, ScheduleComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,6 +29,7 @@ import { BMICComponent } from './components/bmic/bmic.component'; // <-- NgModel
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     FormsModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
