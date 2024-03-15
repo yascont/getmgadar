@@ -4,6 +4,7 @@ import { AuthGuard } from 'src/auth/auth.guard';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutComponent } from './pages/about/about.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 
 const routes: Routes = [
   {
@@ -15,9 +16,15 @@ const routes: Routes = [
   {
     path: 'home',
     pathMatch: 'full',
-    canActivate: [AuthGuard],
-    component: HomePageComponent,
+    // canActivate: [AuthGuard],
+    component: PricingComponent,
   },
+  // {
+  //   path: 'home',
+  //   pathMatch: 'full',
+  //   canActivate: [AuthGuard],
+  //   component: HomePageComponent,
+  // },
   {
     path: 'about',
     pathMatch: 'full',

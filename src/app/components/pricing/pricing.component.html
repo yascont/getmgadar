@@ -1,0 +1,20 @@
+<section>
+    <div class="prices-container">
+        <div class="billingCycle">
+            <h1>Our Simple Pricing Plans</h1>
+            <div class="container">
+                <div class="radio">
+                  <input id="radio-1" name="radio" type="radio" value="Yearly" (change)="onChange()" [(ngModel)]="billingCycle" checked>
+                  <label for="radio-1" class="radio-label">Yearly</label>
+                </div>
+              
+                <div class="radio">
+                  <input id="radio-2" name="radio" type="radio" value="Monthly" (change)="onChange()" [(ngModel)]="billingCycle">
+                  <label  for="radio-2" class="radio-label">Monthly</label>
+                </div>
+            </div>
+        </div>
+        <mg-pricing-table [type]='"basic"' [price]="currentBasicPrice"></mg-pricing-table>
+        <mg-pricing-table [type]='"PREMIUM"' [price]="currentPremiumPrice"></mg-pricing-table>
+    </div>
+</section>
