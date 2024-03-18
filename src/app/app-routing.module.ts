@@ -12,8 +12,7 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    canActivate: [AuthGuard],
-    component: AppComponent,
+    redirectTo: '/home'
   },
   {
     path: 'bmic',
